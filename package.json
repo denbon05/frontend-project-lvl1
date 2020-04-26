@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/denbon05/frontend-project-lvl1#readme",
   "dependencies": {
-    "node": "^14.0.0"
+    "node": "^14.0.0",
+    "readline-sync": "^1.4.10"
   }
 }
