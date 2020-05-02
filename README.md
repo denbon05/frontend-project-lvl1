@@ -8,3 +8,5 @@ Tutorial "brain-gcd.js":
 
 Tutorial "brain-progression.js":
 	https://asciinema.org/a/XUI94AlZ23vxzKVY589FDzo9i
+Tutorial "brain-prime.js":
+	https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh
