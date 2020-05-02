@@ -12,5 +12,5 @@ const gameCalc = () => {
     }
     userCongratulations(name);
 };
-gameCalc();
+
 export { gameCalc };

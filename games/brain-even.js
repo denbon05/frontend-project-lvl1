@@ -12,5 +12,5 @@ const gameAskEvenNumbers = () => {
     }
     userCongratulations(name);
 };
-gameAskEvenNumbers();
+
 export { gameAskEvenNumbers };

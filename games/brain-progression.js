@@ -29,6 +29,4 @@ const askNumInProgression = () => {
     userCongratulations(name);
 };
 
-askNumInProgression();
-
 export { askNumInProgression };

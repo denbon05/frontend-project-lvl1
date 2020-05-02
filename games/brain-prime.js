@@ -22,6 +22,4 @@ const askPrimeNumber = () => {
     userCongratulations(name);
 };
 
-askPrimeNumber();
-
 export { askPrimeNumber };

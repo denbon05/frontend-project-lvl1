@@ -22,6 +22,4 @@ const askGCD = () => {
     userCongratulations(name);
 };
 
-askGCD();
-
 export { askGCD };
