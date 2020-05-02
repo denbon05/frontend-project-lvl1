@@ -12,7 +12,9 @@ const makeRandomToken = () => {
     return tokens[randomIndex];
 };
 const makeRandomNum = () => Math.floor(Math.random() * 100);
+
 const askQuestion = (expression) => console.log(`Question: ${expression}`);
+
 const greetingUser = (task) => {
     console.log("Welcome to the Brain Games!");
     const name = helloName();

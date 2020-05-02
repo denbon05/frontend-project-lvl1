@@ -1,6 +1,6 @@
 import { usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers, userCongratulations } from '../src/index.js';
 
-const gameAskRandomNumbers = () => {
+const gameAskEvenNumbers = () => {
     const name = greetingUser('Answer "yes" if the number is even, otherwise answer "no".');
     for (let i = 0; i < 3; i += 1) {
         const randomNum = makeRandomNum();
@@ -11,5 +11,5 @@ const gameAskRandomNumbers = () => {
     }
     return console.log(`Congratulations, ${name}!`);
 };
-gameAskRandomNumbers();
-export { gameAskRandomNumbers };
+gameAskEvenNumbers();
+export { gameAskEvenNumbers };
