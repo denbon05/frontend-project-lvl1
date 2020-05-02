@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers, userCongratulations } from '../src/index.js';
 
 const takeNumbersGSD = (n1, n2) => {

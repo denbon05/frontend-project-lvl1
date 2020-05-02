@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { usersAnswer, makeRandomNum, askQuestion, greetingUser, makeRandomToken, compareAnswers, userCongratulations } from '../src/index.js';
 
 const gameCalc = () => {

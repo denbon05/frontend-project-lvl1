@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers, userCongratulations } from '../src/index.js';
 
 const gameAskEvenNumbers = () => {
@@ -9,7 +10,7 @@ const gameAskEvenNumbers = () => {
         const userAnswer = usersAnswer();
         if (compareAnswers(userAnswer, rightAnswer, name) === false) return;
     }
-    return console.log(`Congratulations, ${name}!`);
+    userCongratulations(name);
 };
 gameAskEvenNumbers();
 export { gameAskEvenNumbers };

@@ -7,7 +7,11 @@
     "brain-games": "bin/brain-games.js"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-calc": "games/brain-calc.js",
+    "brain-even": "games/brain-even.js",
+    "brain-gcd": "games/brain-gcd.js",
+    "brain-progression": "games/brain-progression.js"
   },
   "type": "module",
   "repository": {

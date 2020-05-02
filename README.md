@@ -1,12 +1,10 @@
 Maintainability
 
 Tutorial "brain-calc.js":
-	What is the result of the expression?
-	Question: 78 + 16
-	Your answer: 94
-	Correct!
+	https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs	
 
-	Question: 6 - 29
-	Your answer: 4
-	"4" is wrong answer ;(. Correct answer was "-23".
-        Let's try again,
+Tutorial "brain-gcd.js":
+	 https://asciinema.org/a/ie4HUv2LfeLErtVEJWT3O3Vpz
+
+Tutorial "brain-progression.js":
+	https://asciinema.org/a/XUI94AlZ23vxzKVY589FDzo9i
