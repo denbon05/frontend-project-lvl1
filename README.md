@@ -1,11 +1,6 @@
-Maintainability
-<p>
 <a href="https://codeclimate.com/github/denbon05/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/0ef3d7c812c2243656dd/maintainability" /></a>
 
-<br>
-[![asciicast](https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs.svg)](https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs)
-<br>
-![](https://github.com/denbon05/frontend-project-lvl1/actions)
+![Node.js CI](https://github.com/denbon05/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)
 
 <p>
 Tutorial "brain-calc.js":<br>
