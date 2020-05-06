@@ -1,7 +1,7 @@
 import userCongratulations, {
   usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
 }
-  from '../src/index.js';
+  from '../index.js';
 
 const randomNum = (n) => Math.round(Math.random() * n);
 

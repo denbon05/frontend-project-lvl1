@@ -1,4 +1,10 @@
-import helloName, { readlineSync } from './cli.js';
+import readlineSync from 'readline-sync';
+
+const helloName = () => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  return name;
+};
 
 const usersAnswer = () => {
   const answer = readlineSync.question('Your answer: ');

@@ -1,3 +1,3 @@
-import gameAskEvenNumbers from '../games/brain-even.js';
+import gameAskEvenNumbers from '../src/games/brain-even.js';
 
 gameAskEvenNumbers();

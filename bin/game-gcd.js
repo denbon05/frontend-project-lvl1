@@ -1,3 +1,3 @@
-import askGCD from '../games/brain-gcd.js';
+import askGCD from '../src/games/brain-gcd.js';
 
 askGCD();

@@ -1,7 +1,7 @@
 import userCongratulations, {
   usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
 }
-  from '../src/index.js';
+  from '../index.js';
 
 const gameAskEvenNumbers = () => {
   const name = greetingUser('Answer "yes" if the number is even, otherwise answer "no".');

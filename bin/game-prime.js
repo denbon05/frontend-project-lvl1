@@ -1,3 +1,3 @@
-import askPrimeNumber from '../games/brain-prime.js';
+import askPrimeNumber from '../src/games/brain-prime.js';
 
 askPrimeNumber();

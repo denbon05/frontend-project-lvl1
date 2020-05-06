@@ -2,7 +2,7 @@ import userCongratulations, {
   usersAnswer, makeRandomNum, askQuestion, greetingUser,
   makeRandomToken, compareAnswers,
 }
-  from '../src/index.js';
+  from '../index.js';
 
 const gameCalc = () => {
   const name = greetingUser('What is the result of the expression?');

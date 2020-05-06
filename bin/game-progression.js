@@ -1,4 +1,4 @@
-import askNumInProgression from '../games/brain-progression.js';
+import askNumInProgression from '../src/games/brain-progression.js';
 
 
 askNumInProgression();

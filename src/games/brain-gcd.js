@@ -1,7 +1,7 @@
 import userCongratulations, {
   usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
 }
-  from '../src/index.js';
+  from '../index.js';
 
 const takeNumbersGSD = (n1, n2) => {
   const smallestNum = n1 < n2 ? n1 : n2;
