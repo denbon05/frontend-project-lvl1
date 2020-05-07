@@ -1,3 +1,4 @@
-import gameAskEvenNumbers from '../src/games/brain-even.js';
+import { task } from '../src/games/brain-even.js';
+import launchGame from '../src/index.js';
 
-gameAskEvenNumbers();
+launchGame(task);

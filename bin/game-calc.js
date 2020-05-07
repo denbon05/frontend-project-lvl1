@@ -1,3 +1,4 @@
-import gameCalc from '../src/games/brain-calc.js';
+import { task } from '../src/games/brain-calc.js';
+import launchGame from '../src/index.js';
 
-gameCalc();
+launchGame(task);

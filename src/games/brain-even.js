@@ -1,18 +1,8 @@
-import userCongratulations, {
-  usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
-}
-  from '../index.js';
+import makeRandomNum from '../utils.js';
 
-const gameAskEvenNumbers = () => {
-  const name = greetingUser('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const randomNum = makeRandomNum();
-    askQuestion(randomNum);
-    const rightAnswer = randomNum % 2 === 0 ? 'yes' : 'no';
-    const userAnswer = usersAnswer();
-    if (compareAnswers(userAnswer, rightAnswer, name) === false) return;
-  }
-  userCongratulations(name);
-};
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const gameAskEvenNumbers = (num = makeRandomNum()) => num % 2 === 0 ? 'yes' : 'no';
 
 export default gameAskEvenNumbers;
+export { task };
