@@ -1,32 +1,39 @@
-import userCongratulations, {
-  usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
-}
-  from '../index.js';
+import makeRandomNum from '../utils.js';
 
-const randomNum = (n) => Math.round(Math.random() * n);
+const returnNumbers = (startNum = makeRandomNum()) => {
+  const returnRandomNum = (range) => Math.round(Math.random() * range);
 
-const askNumInProgression = () => {
-  const name = greetingUser('What number is missing in the progression?');
-  for (let i = 0; i < 3; i += 1) {
-    const nums = [];
-    const diff = randomNum(5);
-    const dotsIndex = randomNum(10);
-    let startNum = makeRandomNum();
-    let rightAnswer;
-    for (let j = 0; j < 10; j += 1) {
-      if (dotsIndex === j) {
-        nums.push('..');
-        startNum += diff;
-        rightAnswer = startNum;
-      } else {
-        startNum += diff;
-        nums.push(startNum);
-      }
+  const nums = [];
+  const diff = returnRandomNum(5);
+  const randomIndex = returnRandomNum(9);
+  for (let i = startNum, j = 0; j < 10; i += diff, j += 1) {
+    if (j === randomIndex) {
+      nums.push('..');
+    } else {
+      nums.push(i);
     }
-    askQuestion(nums.join(' '));
-    if (compareAnswers(Number(usersAnswer()), Number(rightAnswer), name) === false) return;
   }
-  userCongratulations(name);
+  return nums.join(' ');
 };
 
-export default askNumInProgression;
+const correctAnswerOf = (expression) => {
+  const arrExpression = expression.split(' ');
+  const res = arrExpression.map((el, indexEl,arrExpression) => {
+    let diff;
+    if (el === '..') {
+      if (arrExpression[indexEl + 1] && arrExpression[indexEl + 2]) {
+        diff = Number(arrExpression[indexEl + 2]) - Number(arrExpression[indexEl + 1]);
+        return Number(arrExpression[indexEl + 1]) - diff;
+      } else {
+        diff = Number(arrExpression[indexEl - 1]) - Number(arrExpression[indexEl - 2]);
+        return arrExpression[indexEl - 1] + diff;
+      }
+    }
+  });
+  return Number(res.join(''));
+};
+
+const task = 'What number is missing in the progression?';
+
+export default returnNumbers;
+export { correctAnswerOf, task };

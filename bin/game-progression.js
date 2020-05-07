@@ -1,4 +1,6 @@
-import askNumInProgression from '../src/games/brain-progression.js';
+import returnNumbers, { task, correctAnswerOf } from '../src/games/brain-progression.js';
+import launchGame from '../src/index.js';
 
+const template = returnNumbers;
 
-askNumInProgression();
+launchGame(template, correctAnswerOf, task);

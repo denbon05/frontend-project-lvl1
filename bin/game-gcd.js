@@ -1,3 +1,6 @@
-import askGCD from '../src/games/brain-gcd.js';
+import gameCalc, { task, correctAnswerOf } from '../src/games/brain-gcd.js';
+import launchGame from '../src/index.js';
 
-askGCD();
+const template = gameCalc;
+
+launchGame(template, correctAnswerOf, task);

@@ -1,9 +1,13 @@
-import userCongratulations, {
-  usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
-}
-  from '../index.js';
+import makeRandomNum from '../utils.js';
 
-const takeNumbersGSD = (n1, n2) => {
+const return2ValuesForGCD = (randomNum1 = makeRandomNum(), randomNum2 = makeRandomNum()) => {
+  return `${randomNum1} ${randomNum2}`;
+};
+
+const correctAnswerOf = (expression) => {
+  const valuesOfExpression = expression.split(' ');
+  const n1 = valuesOfExpression[0];
+  const n2 = valuesOfExpression[1]
   const smallestNum = n1 < n2 ? n1 : n2;
   for (let i = smallestNum; i > 0; i -= 1) {
     if (n2 % i === 0 && n1 % i === 0) {
@@ -13,16 +17,7 @@ const takeNumbersGSD = (n1, n2) => {
   return false;
 };
 
-const askGCD = () => {
-  const name = greetingUser('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i += 1) {
-    const num1 = makeRandomNum();
-    const num2 = makeRandomNum();
-    askQuestion(`${num1} ${num2}`);
-    const rightAnswer = takeNumbersGSD(num1, num2);
-    if (compareAnswers(Number(usersAnswer()), Number(rightAnswer), name) === false) return;
-  }
-  userCongratulations(name);
-};
+const task = 'Find the greatest common divisor of given numbers.';
 
-export default askGCD;
+export default return2ValuesForGCD;
+export { task, correctAnswerOf };
