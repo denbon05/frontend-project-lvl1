@@ -1,4 +1,6 @@
-import { task } from '../src/games/brain-even.js';
+import gameAskEvenNumbers, { task, correctAnswerOf } from '../src/games/brain-even.js';
 import launchGame from '../src/index.js';
 
-launchGame(task);
+const template = gameAskEvenNumbers;
+
+launchGame(template, correctAnswerOf, task);

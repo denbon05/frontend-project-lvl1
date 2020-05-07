@@ -1,9 +1,4 @@
 import readlineSync from 'readline-sync';
-import makeRandomNum from './utils.js';
-import gameAskEvenNumbers from './games/brain-even.js';
-//import gameCalc from './games/brain-calc.js';
-
-let template = gameAskEvenNumbers;
 
 const helloName = () => {
   const name = readlineSync.question('May I have your name? ');
@@ -26,16 +21,17 @@ const greetingUser = () => {
 
 const userCongratulations = (name) => console.log(`Congratulations, ${name}!`);
 
-const launchGame = (task) => {
+const launchGame = (templateFunction, correctAnswerOf, task) => {
   const name = greetingUser();
   console.log(task);
   for (let i = 0; i < 3; i += 1) {
-    const num = makeRandomNum();
-    askQuestion(num);
-    const userAnswer = usersAnswer();
-    const rightAnswer = template(num);
+    const expression = templateFunction();
+    askQuestion(expression);
+    let userAnswer = usersAnswer();
+    userAnswer = userAnswer === 'yes' || userAnswer === 'no' ? userAnswer : Number(userAnswer);
+    const rightAnswer = correctAnswerOf(expression);
     if (userAnswer !== rightAnswer) {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
       Let's try again, ${name}!`);
       return;
     }

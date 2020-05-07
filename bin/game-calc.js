@@ -1,4 +1,6 @@
-import { task } from '../src/games/brain-calc.js';
+import gameCalc, { task, correctAnswerOf } from '../src/games/brain-calc.js';
 import launchGame from '../src/index.js';
 
-launchGame(task);
+const template = gameCalc;
+
+launchGame(template, correctAnswerOf, task);
