@@ -1,7 +1,9 @@
-import makeRandomNum from '../utils.js';
+import makeRandomNum, {  returnRandomNumWithRange as returnRandomNum } from '../utils.js';
 
 const gameCalc = (randomNum1 = makeRandomNum(), randomNum2 = makeRandomNum()) => {
-  return `${randomNum1} + ${randomNum2}`;
+  const tokens = ['+', '-', '*'];
+  const randomToken = tokens[returnRandomNum(tokens.length)];
+  return `${randomNum1} ${randomToken} ${randomNum2}`;
 };
 
 const correctAnswerOf = (expression) => {
