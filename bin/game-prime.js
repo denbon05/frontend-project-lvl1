@@ -1,3 +1,7 @@
-import askPrimeNumber from '../src/games/brain-prime.js';
+import makeRandomNum from '../src/utils.js';
+import { task, correctAnswerOf } from '../src/games/brain-prime.js';
+import launchGame from '../src/index.js';
 
-askPrimeNumber();
+const template = makeRandomNum;
+
+launchGame(template, correctAnswerOf, task);

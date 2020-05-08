@@ -1,27 +1,13 @@
-import userCongratulations, {
-  usersAnswer, makeRandomNum, askQuestion, greetingUser, compareAnswers,
-}
-  from '../index.js';
-
-const isPrimeNumber = (number) => {
+const correctAnswerOf = (number) => {
   if (number < 2) return false;
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0 && number !== i) {
-      return false;
+      return 'no';
     }
   }
-  return true;
+  return 'yes';
 };
 
-const askPrimeNumber = () => {
-  const name = greetingUser('Answer "yes" if given number is prime. Otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const num = makeRandomNum();
-    askQuestion(num);
-    const rightAnswer = isPrimeNumber(num) ? 'yes' : 'no';
-    if (compareAnswers(usersAnswer(), rightAnswer, name) === false) return;
-  }
-  userCongratulations(name);
-};
+const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export default askPrimeNumber;
+export { task, correctAnswerOf };
