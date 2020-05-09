@@ -14,5 +14,3 @@ Tutorial "brain-progression.js":<br>
 <p>
 Tutorial "brain-prime.js":<br>
 <a href="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh" target="_blank"><img src="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh.svg" /></a>
-	
-<script id="asciicast-dXVgAQM5iURqTd6hQD8l8UXSh" src="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh.js" async></script>
