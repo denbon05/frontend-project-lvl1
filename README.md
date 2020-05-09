@@ -4,14 +4,15 @@
 
 <p>
 Tutorial "brain-calc.js":<br>
-<a href="https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs" target="_blank"><img src="https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs.svg" /></a>
+<a href="https://asciinema.org/a/uW8NTANTbSNugYQ4MCfhIQhHd" target="_blank"><img src="https://asciinema.org/a/uW8NTANTbSNugYQ4MCfhIQhHd.svg" /></a>
 <p>
 Tutorial "brain-gcd.js":<br>
-<a href="https://asciinema.org/a/ie4HUv2LfeLErtVEJWT3O3Vpz" target="_blank"><img src="https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs.svg" /></a>
+<a href="https://asciinema.org/a/JCQUPqqkNWBjnOyFLtprtNKcO" target="_blank"><img src="https://asciinema.org/a/JCQUPqqkNWBjnOyFLtprtNKcO.svg" /></a>
 <p>
 Tutorial "brain-progression.js":<br> 
-<a href="https://asciinema.org/a/XUI94AlZ23vxzKVY589FDzo9i" target="_blank"><img src="https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs.svg" /></a>
+<a href="https://asciinema.org/a/jrgUjLFxrIhL6zQJ40c81Jjfv" target="_blank"><img src="https://asciinema.org/a/jrgUjLFxrIhL6zQJ40c81Jjfv.svg" /></a>
 <p>
 Tutorial "brain-prime.js":<br>
-<a href="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh" target="_blank"><img src="https://asciinema.org/a/GKbYVrVskgc8HR1CDLyrloHBs.svg" /></a>
+<a href="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh" target="_blank"><img src="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh.svg" /></a>
 	
+<script id="asciicast-dXVgAQM5iURqTd6hQD8l8UXSh" src="https://asciinema.org/a/dXVgAQM5iURqTd6hQD8l8UXSh.js" async></script>
