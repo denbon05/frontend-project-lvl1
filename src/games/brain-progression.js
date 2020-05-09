@@ -1,8 +1,9 @@
 import makeRandomNum, { returnRandomNumWithRange as returnRandomNum } from '../utils.js';
 
 const returnNumbers = (startNum = makeRandomNum()) => {
+  const returnRandomDiff = (range) => Math.ceil(Math.random * range);
   const nums = [];
-  const diff = returnRandomNum(6);
+  const diff = returnRandomDiff(5);
   const randomIndex = returnRandomNum(10);
   for (let i = startNum, j = 0; j < 10; i += diff, j += 1) {
     if (j === randomIndex) {
