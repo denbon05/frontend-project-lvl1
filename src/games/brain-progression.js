@@ -1,4 +1,5 @@
 import getRandom from '../utils.js';
+import launchGame from '../index.js';
 
 const returnNumbers = (startNum = getRandom()) => {
   const nums = [];
@@ -16,22 +17,22 @@ const returnNumbers = (startNum = getRandom()) => {
 
 const correctAnswerOf = (expression) => {
   const arrExpression = expression.split(' ');
-  const res = arrExpression.map((el, indexEl,arrExpression) => {
+  const res = arrExpression.map((el, indexEl, arr) => {
     let diff;
     if (el === '..') {
-      if (arrExpression[indexEl + 1] && arrExpression[indexEl + 2]) {
-        diff = Number(arrExpression[indexEl + 2]) - Number(arrExpression[indexEl + 1]);
-        return Number(arrExpression[indexEl + 1]) - diff;
-      } else {
-        diff = Number(arrExpression[indexEl - 1]) - Number(arrExpression[indexEl - 2]);
-        return arrExpression[indexEl - 1] + diff;
+      if (arr[indexEl + 1] && arr[indexEl + 2]) {
+        diff = Number(arr[indexEl + 2]) - Number(arr[indexEl + 1]);
+        return Number(arr[indexEl + 1]) - diff;
       }
     }
+    diff = Number(arr[indexEl - 1]) - Number(arr[indexEl - 2]);
+    return arr[indexEl - 1] + diff;
   });
   return Number(res.join(''));
 };
 
 const task = 'What number is missing in the progression?';
 
-export default returnNumbers;
-export { correctAnswerOf, task };
+const launchGameProgression = launchGame(returnNumbers, correctAnswerOf, task);
+
+export default launchGameProgression;

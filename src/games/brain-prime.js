@@ -1,3 +1,6 @@
+import launchGame from '../index.js';
+import getRandom from '../utils.js';
+
 const correctAnswerOf = (number) => {
   if (number < 2) return false;
   for (let i = 2; i < number; i += 1) {
@@ -10,4 +13,6 @@ const correctAnswerOf = (number) => {
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export { task, correctAnswerOf };
+const launchGamePrime = launchGame(getRandom, correctAnswerOf, task);
+
+export default launchGamePrime;
