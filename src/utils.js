@@ -1,5 +1,6 @@
-const makeRandomNum = () => Math.floor(Math.random() * 100);
-const returnRandomNumWithRange = (range) => Math.floor(Math.random() * range);
+const getRandom = (min = 0, max = 100) => {
+    const randNum = min + Math.random() * (max + 1 - min);
+    return Math.floor(randNum);
+};
 
-export default makeRandomNum;
-export { returnRandomNumWithRange };
+export default getRandom;

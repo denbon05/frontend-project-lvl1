@@ -1,8 +1,8 @@
-import makeRandomNum, {  returnRandomNumWithRange as returnRandomNum } from '../utils.js';
+import getRandom from '../utils.js';
 
-const gameCalc = (randomNum1 = makeRandomNum(), randomNum2 = makeRandomNum()) => {
+const gameCalc = (randomNum1 = getRandom(), randomNum2 = getRandom()) => {
   const tokens = ['+', '-', '*'];
-  const randomToken = tokens[returnRandomNum(tokens.length)];
+  const randomToken = tokens[getRandom(0, tokens.length - 1)];
   return `${randomNum1} ${randomToken} ${randomNum2}`;
 };
 

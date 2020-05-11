@@ -1,6 +1,6 @@
-import makeRandomNum from '../utils.js';
+import getRandom from '../utils.js';
 
-const return2ValuesForGCD = (randomNum1 = makeRandomNum(), randomNum2 = makeRandomNum()) => {
+const return2ValuesForGCD = (randomNum1 = getRandom(), randomNum2 = getRandom()) => {
   return `${randomNum1} ${randomNum2}`;
 };
 

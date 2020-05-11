@@ -7,12 +7,11 @@
   "scripts": {
   },
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-calc": "games/brain-calc.js",
-    "brain-even": "games/brain-even.js",
-    "brain-gcd": "games/brain-gcd.js",
-    "brain-progression": "games/brain-progression.js",
-    "brain-prime": "games/brain-prime.js"
+    "game-calc": "bin/game-calc.js",
+    "game-even": "bin/game-even.js",
+    "game-gcd": "bin/game-gcd.js",
+    "game-progression": "bin/game-progression.js",
+    "game-prime": "bin/game-prime.js"
   },
   "type": "module",
   "repository": {
