@@ -2,13 +2,12 @@ import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
 const correctAnswerOf = () => {
-
   const getExpression = (randomNum1 = getRandom(), randomNum2 = getRandom()) => {
     const tokens = ['+', '-', '*'];
     const randomToken = tokens[getRandom(0, tokens.length - 1)];
     return `${randomNum1} ${randomToken} ${randomNum2}`;
   };
-  
+
   const expression = getExpression();
   const arrOfExpression = expression.split(' ');
   switch (arrOfExpression[1]) {

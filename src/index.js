@@ -8,11 +8,10 @@ const launchGame = (correctAnswerOf, task) => {
   for (let i = 0; i < 3; i += 1) {
     const [rightAnswer, expression] = correctAnswerOf();
     console.log(`Question: ${expression}`);
-    let userAnswer = readlineSync.question('Your answer: ');
-    userAnswer = userAnswer === 'yes' || userAnswer === 'no' ? userAnswer : Number(userAnswer);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== rightAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".
-      Let's try again, ${name}!`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
+      console.log(`Let's try again, ${name}!)`);
       return;
     }
     console.log('Correct!');

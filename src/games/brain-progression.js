@@ -2,7 +2,6 @@ import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
 const correctAnswerOf = () => {
-
   const returnNumbers = (startNum = getRandom()) => {
     const nums = [];
     const diff = getRandom(1, 5);

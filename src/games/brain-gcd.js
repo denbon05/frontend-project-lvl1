@@ -2,7 +2,6 @@ import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
 const correctAnswerOf = () => {
-
   const return2ValuesForGCD = (
     randomNum1 = getRandom(), randomNum2 = getRandom(),
   ) => `${randomNum1} ${randomNum2}`;
