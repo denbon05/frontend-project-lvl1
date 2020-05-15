@@ -2,7 +2,7 @@
   "name": "frontend-project-den",
   "version": "0.0.3",
   "description": "my frontend project",
-  "main": "bin/brain-games.js",
+  "main": "src/index.js",
   "keywords": "first project on hexlet",
   "scripts": {
   },

@@ -3,13 +3,15 @@ import launchGame from '../index.js';
 
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const correctAnswerOf = () => {
-  const num = getRandom();
+const isEven = (n) => n % 2 === 0;
 
-  const result = num % 2 === 0 ? 'yes' : 'no';
-  return [result, num];
+const getGameData = () => {
+  const numberAsked = getRandom();
+
+  const correctAnswer = isEven(numberAsked) ? 'yes' : 'no';
+  return [correctAnswer, numberAsked];
 };
 
-const launchGameEven = () => launchGame(correctAnswerOf, task);
+const launchGameEven = () => launchGame(getGameData, task);
 
 export default launchGameEven;
