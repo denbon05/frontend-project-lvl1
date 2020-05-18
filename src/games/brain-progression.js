@@ -1,27 +1,30 @@
 import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
+const progressionLength = 10;
+
 const getNumsProgression = () => {
   const nums = [];
-  const diff = getRandom(1, 5);
-  const countNums = 10;
-  const randomIndex = getRandom(0, countNums - 1);
-  const startNum = getRandom();
-  let numInstedDots;
-  for (let i = startNum, j = 1; j <= countNums; i += diff, j += 1) {
-    if (j === randomIndex) {
-      nums.push('..');
-      numInstedDots = i;
-    } else {
-      nums.push(i);
-    }
+  const difference = getRandom(1, 5);
+  const firstNum = getRandom();
+  for (let i = firstNum, j = 1; j <= progressionLength; i += difference, j += 1) {
+    nums.push(i);
   }
-  return [nums, numInstedDots];
+  return nums;
 };
 
 const getGameData = () => {
-  const [numsbersProgression, correctAnswer] = getNumsProgression();
-  const expression = numsbersProgression.join(' ');
+  const progression = getNumsProgression();
+  const dotsIndex = getRandom(0, progressionLength - 1);
+  let correctAnswer;
+  const progressionWidthDots = progression.map((num, index) => {
+    if (dotsIndex === index) {
+      correctAnswer = num;
+      return '..';
+    }
+    return num;
+  });
+  const expression = progressionWidthDots.join(' ');
   return [String(correctAnswer), expression];
 };
 

@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "my frontend project",
   "main": "src/index.js",
-  "keywords": "first project on hexlet",
+  "keywords": ["first project on hexlet"],
   "scripts": {
   },
   "bin": {

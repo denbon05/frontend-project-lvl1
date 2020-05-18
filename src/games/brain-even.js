@@ -6,10 +6,10 @@ const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (n) => n % 2 === 0;
 
 const getGameData = () => {
-  const numberAsked = getRandom();
+  const questedNumber = getRandom();
 
-  const correctAnswer = isEven(numberAsked) ? 'yes' : 'no';
-  return [correctAnswer, numberAsked];
+  const correctAnswer = isEven(questedNumber) ? 'yes' : 'no';
+  return [correctAnswer, questedNumber];
 };
 
 const launchGameEven = () => launchGame(getGameData, task);

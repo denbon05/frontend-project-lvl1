@@ -1,6 +1,6 @@
 <a href="https://codeclimate.com/github/denbon05/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/0ef3d7c812c2243656dd/maintainability" /></a>
 
-![Node.js CI](https://github.com/denbon05/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)
+<a href="https://github.com/denbon05/frontend-project-lvl1/actions?query=workflow%3A%22Node.js+CI%22">![Node.js CI](https://github.com/denbon05/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)</a>
 
 <p>
 Tutorial "brain-calc.js":<br>

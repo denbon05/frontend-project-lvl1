@@ -2,7 +2,8 @@ import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
 const getGreatestCommonDivisor = (num1, num2) => {
-  const smallestNum = num1 < num2 ? num1 : num2;
+  const smallestNum = Math.min(num1, num2);
+  if (smallestNum === 0) return Math.max(num1, num2);
   for (let i = smallestNum; i > 0; i -= 1) {
     if (num2 % i === 0 && num1 % i === 0) {
       return i;
