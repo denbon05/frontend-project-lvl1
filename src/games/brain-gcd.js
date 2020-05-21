@@ -16,8 +16,8 @@ const getGameData = () => {
   const n1 = getRandom();
   const n2 = getRandom();
   const correctAnswer = String(getGreatestCommonDivisor(n1, n2));
-  const expression = `${n1} ${n2}`;
-  return [correctAnswer, expression];
+  const question = `${n1} ${n2}`;
+  return [correctAnswer, question];
 };
 
 const task = 'Find the greatest common divisor of given numbers.';

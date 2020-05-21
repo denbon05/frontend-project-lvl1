@@ -1,8 +1,8 @@
 import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
-const calculate = (num1, num2, token) => {
-  switch (token) {
+const calculate = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
       return num1 + num2;
     case '-':
@@ -10,7 +10,7 @@ const calculate = (num1, num2, token) => {
     case '*':
       return num1 * num2;
     default:
-      throw new Error(`Unknown order state: '${token}'!`);
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
 };
 

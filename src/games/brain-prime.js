@@ -12,9 +12,9 @@ const isPrime = (n) => {
 };
 
 const getGameData = () => {
-  const questedNumber = getRandom();
-  const rightAnswer = isPrime(questedNumber) ? 'yes' : 'no';
-  return [rightAnswer, questedNumber];
+  const question = getRandom();
+  const rightAnswer = isPrime(question) ? 'yes' : 'no';
+  return [rightAnswer, String(question)];
 };
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';

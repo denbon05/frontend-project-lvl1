@@ -1,31 +1,24 @@
 import getRandom from '../utils.js';
 import launchGame from '../index.js';
 
-const progressionLength = 10;
-
-const getNumsProgression = () => {
-  const nums = [];
-  const difference = getRandom(1, 5);
-  const firstNum = getRandom();
-  for (let i = firstNum, j = 1; j <= progressionLength; i += difference, j += 1) {
-    nums.push(i);
+const makeProgression = (firstNum, difference, progressionLength) => {
+  const progresion = [];
+  for (let i = firstNum; progresion.length <= progressionLength; i += difference) {
+    progresion.push(i);
   }
-  return nums;
+  return progresion;
 };
 
 const getGameData = () => {
-  const progression = getNumsProgression();
-  const dotsIndex = getRandom(0, progressionLength - 1);
-  let correctAnswer;
-  const progressionWidthDots = progression.map((num, index) => {
-    if (dotsIndex === index) {
-      correctAnswer = num;
-      return '..';
-    }
-    return num;
-  });
-  const expression = progressionWidthDots.join(' ');
-  return [String(correctAnswer), expression];
+  const progressionLength = 10;
+  const difference = getRandom(1, 5);
+  const firstNum = getRandom();
+  const progression = makeProgression(firstNum, difference, progressionLength);
+  const hiddenElementIndex = getRandom(0, progressionLength - 1);
+  const correctAnswer = progression[hiddenElementIndex];
+  const progressionWidthDots = progression.map((num, index) => (hiddenElementIndex === index ? '..' : num));
+  const question = progressionWidthDots.join(' ');
+  return [String(correctAnswer), question];
 };
 
 const task = 'What number is missing in the progression?';
