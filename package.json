@@ -3,9 +3,10 @@
   "version": "0.0.3",
   "description": "my frontend project",
   "main": "src/index.js",
-  "keywords": ["first project on hexlet"],
-  "scripts": {
-  },
+  "keywords": [
+    "first project on hexlet"
+  ],
+  "scripts": {},
   "bin": {
     "game-calc": "bin/game-calc.js",
     "game-even": "bin/game-even.js",

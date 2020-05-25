@@ -16,8 +16,8 @@ const getGameData = () => {
   const progression = makeProgression(firstNum, difference, progressionLength);
   const hiddenElementIndex = getRandom(0, progressionLength - 1);
   const correctAnswer = progression[hiddenElementIndex];
-  const progressionWidthDots = progression.map((num, index) => (hiddenElementIndex === index ? '..' : num));
-  const question = progressionWidthDots.join(' ');
+  progression[hiddenElementIndex] = '..';
+  const question = progression.join(' ');
   return [String(correctAnswer), question];
 };
 
