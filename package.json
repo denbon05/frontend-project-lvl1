@@ -4,9 +4,11 @@
   "description": "my frontend project",
   "main": "src/index.js",
   "keywords": [
-    "first project on hexlet"
+    "first project on hexlet.io"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "npx -n --experimental-vm-modules jest"
+  },
   "bin": {
     "game-calc": "bin/game-calc.js",
     "game-even": "bin/game-even.js",
@@ -14,7 +16,6 @@
     "game-progression": "bin/game-progression.js",
     "game-prime": "bin/game-prime.js"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/denbon05/frontend-project-lvl1.git"
@@ -24,6 +25,11 @@
   "bugs": {
     "url": "https://github.com/denbon05/frontend-project-lvl1/issues"
   },
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  },
   "homepage": "https://github.com/denbon05/frontend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
@@ -31,6 +37,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.1.0"
   }
 }

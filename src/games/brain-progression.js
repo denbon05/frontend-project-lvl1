@@ -3,7 +3,7 @@ import launchGame from '../index.js';
 
 const makeProgression = (firstNum, difference, progressionLength) => {
   const progresion = [];
-  for (let i = firstNum; progresion.length <= progressionLength; i += difference) {
+  for (let i = firstNum; progresion.length < progressionLength; i += difference) {
     progresion.push(i);
   }
   return progresion;
@@ -26,3 +26,4 @@ const task = 'What number is missing in the progression?';
 const launchGameProgression = () => launchGame(getGameData, task);
 
 export default launchGameProgression;
+export { makeProgression };

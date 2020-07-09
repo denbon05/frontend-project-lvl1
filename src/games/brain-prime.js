@@ -22,3 +22,4 @@ const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const launchGamePrime = () => launchGame(getGameData, task);
 
 export default launchGamePrime;
+export { isPrime };

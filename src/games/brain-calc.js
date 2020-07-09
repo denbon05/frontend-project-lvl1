@@ -30,3 +30,4 @@ const task = 'What is the result of the expression?';
 const launchCalcGame = () => launchGame(getGameData, task);
 
 export default launchCalcGame;
+export { calculate };

@@ -25,3 +25,4 @@ const task = 'Find the greatest common divisor of given numbers.';
 const launchGameGSD = () => launchGame(getGameData, task);
 
 export default launchGameGSD;
+export { getGreatestCommonDivisor };
