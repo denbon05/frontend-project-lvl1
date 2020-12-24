@@ -8,4 +8,4 @@ fixLint:
 	npx eslint . --fix-dry-run
 test:
 	npm test
-.PHONY: 
+.PHONY: test
